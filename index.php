@@ -24,9 +24,26 @@ echo "<br/>";
 
 echo "<h3> Constants </h3>";
 define('STATUS_PAID', 'paid');
-echo "STATUS_PAID: " .STATUS_PAID;
+echo "STATUS_PAID: " .STATUS_PAID ."<br/>";
 
 echo str_repeat("-", 100);
 echo "<br/>";
 
+
+// Data Types
+
+echo "<h3> Data Types </h3>";
+$completed = true;
+echo $completed ."<br/>";
+
+$completed = false;
+echo $completed ."<br/>"; //false prints nothing
+
+$age = 25;
+echo "I'm " .$age ." years old! <br/>";
+
+echo "Type of age variable is " .gettype($age) ."<br/>";
+
+echo str_repeat("-", 100);
+echo "<br/>";
 ?>
