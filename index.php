@@ -92,6 +92,6 @@ echo '<br/>';
 echo str_repeat("-", 100);
 echo "<br/>";
 
-$x = NAN;
-echo is_nan($x);
+$x = NULL;
+echo var_dump(is_nan($x));
 ?>
