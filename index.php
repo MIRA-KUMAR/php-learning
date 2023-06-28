@@ -44,6 +44,54 @@ echo "I'm " .$age ." years old! <br/>";
 
 echo "Type of age variable is " .gettype($age) ."<br/>";
 
+echo var_dump($completed) ."<br/>";
+
 echo str_repeat("-", 100);
 echo "<br/>";
+
+
+// Functions and Type casting 
+
+echo "<h3> Functions and Type casting </h3>";
+function sum($a, $b) {
+    echo var_dump($a, $b);
+    echo '<br/>';
+    return $a + $b;
+}
+
+echo sum(2, 3);
+echo '<br/>';
+echo sum(2.5, '3');
+echo '<br/>';
+echo var_dump(sum(2.5, '3'));
+echo '<br/>';
+
+function sum2(int $a, int $b) {
+    echo var_dump($a, $b);
+    echo '<br/>';
+    return $a + $b;
+}
+echo sum2(2.5, '3');
+// echo sum2(2.5, 'Hello');
+echo '<br/>';
+
+
+$x = 7.5;
+$x = (int)$x;
+echo var_dump($x);
+echo '<br/>';
+
+$x = (int)'1000.9tweet8';
+echo var_dump($x);
+echo '<br/>';
+
+$y = 900;
+echo var_dump(is_int($y));
+echo '<br/>';
+
+echo str_repeat("-", 100);
+echo "<br/>";
+
+$x = NAN;
+echo is_nan($x);
 ?>
